@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+  <script>
+    const para = document.createElement('p');
+    para.textContent = 'This is a new paragraph appended correctly';
+    document.getElementById('myDiv').appendChild(para);
+  </script>
+</body>
+</html>
