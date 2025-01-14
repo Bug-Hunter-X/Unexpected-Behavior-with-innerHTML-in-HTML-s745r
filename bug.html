@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+  <script>
+    // Incorrect way to access element using innerHTML
+    document.getElementById('myDiv').innerHTML = "<p>This is a new paragraph using innerHTML incorrectly.</p>" + document.getElementById('myDiv').innerHTML;
+
+    //Correct way to access and append element using innerHTML
+    // const para = document.createElement('p');
+    // para.textContent = 'This is a new paragraph appended correctly';
+    // document.getElementById('myDiv').appendChild(para);
+  </script>
+</body>
+</html>
